@@ -15,6 +15,16 @@ tasks {
     }
 }
 
+publishing {
+    publications {
+        getByName<MavenPublication>("maven") {
+            artifact(tasks.reobfJar) {
+                classifier = "reobf"
+            }
+        }
+    }
+}
+
 dependencies {
     api(project(":glow-adapt"))
     paperDevBundle("1.19.2-R0.1-SNAPSHOT")
