@@ -1,0 +1,2 @@
+[libraries]
+spigot = { group = "org.spigotmc", name = "spigot-api", version = "1.9.4-R0.1-SNAPSHOT" }
